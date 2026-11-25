@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Senai - Loja CSS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #f5f5f5; color: #333; padding: 20px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    header { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 24px; text-align: center; border: 2px solid #333; }
+    h1 { margin-bottom: 8px; }
+    .produtos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 24px; }
+    .card { background: #fff; border: 2px solid #555; border-radius: 8px; width: 220px; padding: 16px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 8px; }
+    .card img { width: 100%; height: 140px; object-fit: cover; border-radius: 6px; margin-bottom: 12px; border: 1px solid #ccc; }
+    .card h3 { margin: 0 0 8px 0; font-size: 1.1rem; padding: 4px; background: #eee; border: 1px solid #999; border-radius: 4px; }
+    .card p { font-size: 0.9rem; color: #666; margin: 8px 0; padding: 6px; background: #fafafa; border: 1px solid #ddd; border-radius: 4px; }
+    .preco { font-weight: bold; font-size: 1.2rem; color: #d32f2f; margin: 10px 0; padding: 8px; border-top: 2px solid #333; }
+    button { background: #333; color: #fff; border: 2px solid #333; padding: 10px 18px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+    button:hover { background: #fff; color: #333; }
+    .rodape { margin-top: 32px; text-align: center; color: #666; font-size: 0.9rem; padding: 16px; border-top: 2px solid #333; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Senai Loja CSS</h1>
+      <p>Loja virtual demonstrando Box Model e Flexbox</p>
+    </header>
+    <div class="produtos">
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 1" />
+        <h3>Camiseta Básica</h3>
+        <p>Confortável e versátil para o dia a dia.</p>
+        <div class="preco">R$ 49,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 2" />
+        <h3>Tênis Esportivo</h3>
+        <p>Ideal para corrida e atividades físicas.</p>
+        <div class="preco">R$ 199,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 3" />
+        <h3>Mochila Urban</h3>
+        <p>Com compartimento para notebook de até 15".</p>
+        <div class="preco">R$ 129,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 4" />
+        <h3>Relógio de Pulso</h3>
+        <p>Design clássico e resistente à água.</p>
+        <div class="preco">R$ 89,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 5" />
+        <h3>Fone de Ouvido</h3>
+        <p>Som de alta qualidade com cancelamento de ruído.</p>
+        <div class="preco">R$ 79,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 6" />
+        <h3>Mesa de Trabalho</h3>
+        <p>Ergonomica e espaçosa para home office.</p>
+        <div class="preco">R$ 349,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 7" />
+        <h3>Cadeira Ergonômica</h3>
+        <p>Suporte lombar e ajuste de altura.</p>
+        <div class="preco">R$ 599,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 8" />
+        <h3>Luminária de Mesa</h3>
+        <p>LED com intensidade ajustável.</p>
+        <div class="preco">R$ 69,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 9" />
+        <h3>Mousepad Grande</h3>
+        <p>Superfície antiderrapante para mouse.</p>
+        <div class="preco">R$ 39,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 10" />
+        <h3>Teclado Mecânico</h3>
+        <p>Switches azuis com iluminação RGB.</p>
+        <div class="preco">R$ 299,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 11" />
+        <h3>Mouse Gamer</h3>
+        <p>Alta precisão com botões programáveis.</p>
+        <div class="preco">R$ 149,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 12" />
+        <h3>Webcam HD</h3>
+        <p>1080p para reuniões e streaming.</p>
+        <div class="preco">R$ 199,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 13" />
+        <h3>Suporte para Notebook</h3>
+        <p>Ergonômico e dobrável.</p>
+        <div class="preco">R$ 89,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 14" />
+        <h3>HD Externo 1TB</h3>
+        <p>Portátil e rápido para backup.</p>
+        <div class="preco">R$ 249,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 15" />
+        <h3>Pendrive 64GB</h3>
+        <p>Velocidade USB 3.0.</p>
+        <div class="preco">R$ 59,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 16" />
+        <h3>Cabo USB-C</h3>
+        <p>Carregamento e transferência rápida.</p>
+        <div class="preco">R$ 29,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 17" />
+        <h3>Carregador Portátil</h3>
+        <p>10000mAh para celular.</p>
+        <div class="preco">R$ 159,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 18" />
+        <h3>Caixa de Som Bluetooth</h3>
+        <p>Som potente e portátil.</p>
+        <div class="preco">R$ 179,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 19" />
+        <h3>Smartwatch</h3>
+        <p>Monitoramento de saúde e atividades.</p>
+        <div class="preco">R$ 399,90</div>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Produto 20" />
+        <h3>Luminária de Cabeceira</h3>
+        <p>Luz noturna com sensor de toque.</p>
+        <div class="preco">R$ 79,90</div>
+        <button>Comprar</button>
+      </div>
+    </div>
+    <div class="rodape">
+      <p>Senai Loja CSS — Demonstração de Box Model (content, padding, border, margin) e Flexbox</p>
+    </div>
+  </div>
+</body>
+</html>
